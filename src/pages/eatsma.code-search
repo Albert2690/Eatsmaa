@@ -1,0 +1,74 @@
+# Query: eatsma
+# ContextLines: 1
+
+16 results - 6 files
+
+package-lock.json:
+  1  {
+  2:   "name": "eatsmaa",
+  3    "version": "0.0.0",
+
+  7      "": {
+  8:       "name": "eatsmaa",
+  9        "version": "0.0.0",
+
+package.json:
+  1  {
+  2:   "name": "eatsmaa",
+  3    "private": true,
+
+src/components/Footer.jsx:
+  16                </div>
+  17:               <span className="font-display font-black text-2xl text-white tracking-tighter">EATSMA</span>
+  18              </Link>
+
+  54                  <MapPin className="h-5 w-5 text-brand-orange shrink-0 mt-0.5" />
+  55:                 <span className="leading-relaxed">Eatsmaa Foods,<br/>Chittarikkal, Kasaragod Dist,<br/>Kerala, 671326</span>
+  56                </li>
+
+  62                  <Mail className="h-5 w-5 text-brand-orange shrink-0" />
+  63:                 <span>hello@eatsmaa.com</span>
+  64                </li>
+
+  70            <p>
+  71:             &copy; {new Date().getFullYear()} EATSMA Foods. Created for world-class standards.
+  72            </p>
+
+src/components/Navbar.jsx:
+  43                <span className="font-display font-black text-2xl tracking-tighter text-white">
+  44:                 EATSMAA
+  45                </span>
+
+src/pages/Contact.jsx:
+   12      {
+   13:       q: "What makes Eatsma snacks different?",
+   14        a: "Our snacks are prepared strictly using ancestral recipes, cooked slowly over traditional wood-fire hearths, and fried in 100% pure cold-pressed coconut oil. We source all raw ingredients (plantains, jackfruit, tapioca) directly from micro-farmers in Chittarikkal, Kasaragod."
+
+  108                    <p className="text-stone-400 text-xs mt-1 leading-relaxed">
+  109:                     Eatsmaa Food Center, Chittarikkal,<br/>Kasaragod District, Kerala, 671326
+  110                    </p>
+
+  135                    <p className="text-stone-400 text-xs mt-1">
+  136:                     hello@eatsmaa.com
+  137                    </p>
+
+  299                      <p className="text-stone-400 text-sm max-w-sm">
+  300:                       Thank you for contacting Eatsmaa. Our dispatch coordinators will review and reply within 24 hours.
+  301                      </p>
+
+src/pages/Home.jsx:
+  149        role: "Expat, UAE",
+  150:       text: "Whenever I visit home, I pack 10 bags of Eatsmaa Spicy Mixture. It has that authentic local chili fire that you simply cannot buy anywhere else.",
+  151        stars: 5
+
+  274                  src={heroProductImg} 
+  275:                 alt="Eatsmaa Banana Chips Bag" 
+  276                  className="w-full h-auto pointer-events-none select-none"
+
+  393              <p className="text-stone-400 text-lg leading-relaxed">
+  394:               Nestled in the beautiful lush slopes of Chittarikkal, Kasaragod, <strong className="text-white">EATSMAA</strong> preserves generations of ancestral culinary secrets. We began with a commitment: to share the pure, unfiltered crunch of classic Malabar tea-shop snacks with the modern world.
+  395              </p>
+
+  504              <h2 className="text-4xl sm:text-5xl font-display font-black text-white tracking-tighter leading-none">
+  505:               THE EATSMAA DIFFERENCE
+  506              </h2>

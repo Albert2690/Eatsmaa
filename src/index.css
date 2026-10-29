@@ -1,12 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #FF5A00;
+  --color-brand-lime: #CCFF00;
+  --color-brand-dark: #0A0A0B;
+  --color-brand-dark-card: #141416;
+  --color-brand-cream: #FAF6F0;
+  
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
 
 @layer base {
   body {
-    @apply antialiased text-stone-800 bg-stone-50 font-sans;
+    @apply antialiased text-stone-200 bg-brand-dark font-body;
+    cursor: none; /* Hide default cursor for custom cursor experience on desktop */
   }
   
-  /* Smooth scrolling for anchor links */
+  /* Reset cursor for mobile or fallback */
+  @media (max-width: 768px) {
+    body {
+      cursor: auto;
+    }
+  }
+
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 }
+
+/* Custom Utilities */
+@utility glass {
+  background: rgba(20, 20, 22, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@utility glass-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@utility glow-orange {
+  box-shadow: 0 0 30px rgba(255, 90, 0, 0.15);
+}
+
+@utility glow-lime {
+  box-shadow: 0 0 30px rgba(204, 255, 0, 0.15);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5A00;
+}
+
+/* Infinite Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+/* Custom styles for grid pattern background */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
