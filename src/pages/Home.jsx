@@ -372,7 +372,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent" />
             <div className="absolute bottom-8 left-8 right-8">
               <div className="w-12 h-1 bg-brand-orange mb-4 rounded" />
-              <h4 className="text-2xl font-display font-bold text-white">Chittarikkal Valley</h4>
+              <h4 className="text-2xl font-display font-bold text-white">Chittarikkal </h4>
               <p className="text-stone-400 text-xs font-bold uppercase tracking-wider mt-1">Sourcing Rooted in Traditional Heritage</p>
             </div>
           </motion.div>
